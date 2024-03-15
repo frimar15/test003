@@ -312,7 +312,7 @@ static ssize_t read_until_limit_or_eof(int fd, uint8_t *buf, size_t limit) {
     }
     pos += ret;
   }
-  //return pos;
+  return pos;
 }
 
 // Reads a raw key, of size at least FSCRYPT_MIN_KEY_SIZE bytes and at most
